@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+ <!-- Spracheinstellung: Deutsch -->
+<html lang="de">
+<head>
+   <!-- Univeraller Zeichenübersetzer-->
+  <meta charset="UTF-8">
+   <!--Für responsive-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Tab Name-->
+  <title>Events</title>
+    <!--Favicon-->
+    <link rel="icon" href="media/bilder/coffee_cup.png" type="image/png" />
+    <!--W3C Framework-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /** CSS für Schriftarten**/
+      body,
+      h2,
+      h6 {
+        font-family: lexend, sans-serif;
+      }
+
+      h6{
+        font-weight: bold;
+      }
+
+       /** CSS für Eventkarten**/
+      .cardsizer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 520px;
+}
+
+.cardsizer img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5em;
+}
+
+.cardsizer h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.cardsizer p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.cardsizer button {
+  margin-top: auto;
+}
+      </style>
+</head>
+  <!--Header und Navigation-->
+  <body>
+    <header class="w3-container">
+      <img src="../media/bilder/logo.png" alt="Logo moon coffee" />
+    </header>
+    <nav class="w3-bar w3-border w3-brown w3-large">
+      <a
+        href="../index.html"
+        class="w3-bar-item w3-button w3-border-right w3-hover-brown"
+        >Home</a
+        >
+      <a
+        href="angebot.html"
+        class="w3-bar-item w3-button w3-border-right w3-hover-brown"
+        >Angebot</a
+      >
+      <a
+        href="events.html"
+        class="w3-bar-item w3-button w3-border-right w3-hover-brown"
+        >Events</a
+      >
+    </nav>
+    <!-- Einleitung -->
+    <main class="w3-container">
+      <h2>Kaffee trifft Kreativität – unsere Events für dich</h2>
+      <p>
+        Bei uns dreht sich nicht alles nur um Kaffee – auch wenn wir ihn lieben.
+        Was wir wirklich bieten, ist ein Ort zum Ankommen, Durchatmen und
+        Genießen. Ob du auf der Suche nach einem inspirierenden Start in den Tag
+        bist, einem ruhigen Platz zum Arbeiten oder einfach einer kleinen
+        Auszeit vom Alltag – bei uns findest du mehr als nur ein Getränk.
+      </p>
+      <p>
+        Unsere Leidenschaft für Qualität zeigt sich nicht nur in jeder Tasse,
+        sondern auch in unserem hausgemachten Gebäck, den liebevoll zubereiteten
+        Snacks und der warmen Atmosphäre. Hier entstehen Gespräche, Ideen und
+        Begegnungen – oft bei einem Cappuccino, manchmal bei einem frisch
+        gepressten Saft oder einem herzhaften Frühstück.
+      </p>
+      <p>Komm vorbei – für den Kaffee. Bleib – für das Gefühl.</p>
+<!-- Allgemein für Container -->
+      <div class="w3-row">
+<!-- Container Eventkarte 1 -->
+        <div class="w3-col l3 m6 w3-padding">
+          <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+            <!-- Bild Eventkarte -->
+            <img
+              class="w3-image"
+              src="../media/bilder/livemusik.jpg"
+              alt="Musikerin singt vor ihrem Publikum"
+            />
+            <!-- Text Eventkarte -->
+            <h6>Live Musik</h6>
+            <p>
+              Ein Abend voller Musik mit Loreley erwartet dich. Ihre
+              gefühlvollen Songs schaffen eine gemütliche Atmosphäre bei
+              Kerzenschein. Ideal zum Abschalten und Geniessen.
+            </p>
+            <!-- Button "Jetzt Anmelden" -->
+<button onclick="document.getElementById('modalAnmelden').style.display='block'"
+        class="w3-button w3-round w3-brown">
+  Jetzt Anmelden
+</button>
+<!-- Modal -->
+<div id="modalAnmelden" class="w3-modal" style="display:none">
+  <div class="w3-modal-content w3-animate-top w3-card-4 w3-round-large" style="max-width:500px">
+    <header class="w3-container w3-brown w3-round-top">
+      <span onclick="document.getElementById('modalAnmelden').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+      <h2>Anmeldung bestätigen</h2>
+    </header>
+    <div class="w3-container w3-padding">
+      <p>Möchtest du dich wirklich anmelden?</p>
+      <div class="w3-margin-top">
+        <button class="w3-button w3-green w3-round w3-margin-right"
+                onclick="alert('Anmeldung abgeschlossen!'); document.getElementById('modalAnmelden').style.display='none'">
+          Ja, anmelden
+        </button>
+        <button class="w3-button w3-red w3-round"
+                onclick="document.getElementById('modalAnmelden').style.display='none'">
+          Abbrechen
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+        <!-- Container Eventkarte 2-->
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/poetryslam.jpg"
+      alt="Poet trägt sein Gedicht vor dem Puplikum vor"
+    />
+    <!-- Text Eventkarte -->
+    <h6>Poetry Slam</h6>
+    <p>
+      Erlebe Valerio Moser live: humorvoll, tiefgründig und wortgewandt.
+      Seine Texte bewegen und unterhalten. Lass dich inspirieren und
+      tauch ein in einen Abend voller Poesie und Emotionen.
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+ <!-- Container Eventkarte 3--> 
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/tee.jpg"
+      alt="Ein selbstgemachter Kräutertee in einem Glas"
+    />
+    <!-- Text Eventkarte -->
+    <h6>Tee-Mischungen kreieren</h6>
+    <p>
+      Kreiere deine eigene Teemischung mit Kräutern, Blüten und
+      Gewürzen. Du lernst über Aromen, Wirkung und Komposition – zum
+      Schluss nimmst du deine persönliche Mischung mit nach Hause.
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+<!-- Container Eventkarte 4-->
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/barista.jpg"
+      alt="Workshop Teilnhemer machen ihren ersten Cappuccino"
+    />
+    <!-- Text Eventkarte -->
+    <h6>Barista Workshop</h6>
+    <p>
+      Lerne die Grundlagen des perfekten Kaffees. Vom Espresso bis zur
+      Latte Art – unter Anleitung übst du den Umgang mit der Maschine
+      und verfeinerst deine Technik. Ideal für alle Kaffeeliebhaber.
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+<!-- Container Eventkarte 5-->
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/mugworkshop.jpg"
+      alt="Tassen werden mit Farbe dekoriert"
+    />
+    <!-- Text Eventkarte -->
+    <h6>DIY Mug Workshop</h6>
+    <p>
+      Gestalte deine eigene Tasse. Mit Farben und Pinseln machst du aus
+      einer schlichten Tasse ein echtes Unikat. Macht einfach Spass. Nach
+      dem Brennen ist sie bereit für den Einsatz!
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+<!-- Container Eventkarte 6-->
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/kaffeklatsch.jpg"
+      alt="Teilnhemer haben Caffee in der Hand und vor ihnen liegen Kuchen und Bücher"
+    />
+    <!-- Text Eventkarte -->
+    <h6>Kaffeeklatsch</h6>
+    <p>
+      Tauche mit uns in die Welt der Bücher ein. Gemeinsam lesen wir
+      Kapitel und tauschen Gedanken dazu aus – bei Tee, Kaffee und
+      entspannter Stimmung. Perfekt für Literaturliebhaber.
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+<!-- Container Eventkarte 7-->
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/lesezeichen.jpg"
+      alt="Selbstgebastelte Lesezeichen aus Papier"
+    />
+    <!-- Text Eventkarte -->
+    <h6>Lesezeichen basteln</h6>
+    <p>
+      Werde kreativ und gestalte einzigartige Lesezeichen mit Papier,
+      Farben und Deko. Ob für dich oder als Geschenk – am Ende hältst du
+      schöne Einzelstücke in den Händen, die jedes Buch begleiten.
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+<!-- Container Eventkarte 8-->
+<div class="w3-col l3 m6 w3-padding">
+  <div class="w3-card w3-white w3-padding w3-round-large w3-margin-top cardsizer">
+    <!-- Bild Eventkarte -->
+    <img
+      class="w3-image"
+      src="../media/bilder/bingo.jpg"
+      alt="Teilnehmer spielen Bingo und essen dabei"
+    />
+    <h6>Bingo Abend</h6>
+    <p>
+      Ein Abend voller Spannung, Spass und kleiner Gewinne. Spiele Bingo
+      mit uns, geniess Snacks und Getränke und freu dich auf eine
+      lockere, gesellige Stimmung mit Überraschungsmomenten.
+    </p>
+    <!-- Anmelde Button -->
+    <button onclick="document.getElementById('modalAnmelden').style.display='block'"
+            class="w3-button w3-round w3-brown">
+      Jetzt Anmelden
+    </button>
+  </div>
+</div>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="w3-container w3-brown w3-padding-16 w3-center"
+      style="font-size: small"
+    >
+      <p>
+        Moon Coffee – Dein Lieblingsplatz für guten Kaffee & entspannte Momente
+      </p>
+      <p>Besuche uns auch auf Instagram & TikTok!</p>
+      <p>© 2025 Moon Coffee | Alle Rechte vorbehalten</p>
+    </footer>
+  </body>
+</html>

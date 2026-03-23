@@ -1,0 +1,38 @@
+/** in allen**/
+header {
+  position: sticky;
+}
+/** in allen**/
+.w3-container {
+  padding: 0;
+  margin: 0;
+}
+
+/** in Index**/
+.cutout-text {
+  background-color: #ffffff;
+  color: black;
+  font-size: 6vw; /* Responsive Schriftgröße */
+  font-weight: bold;
+  padding: 10px;
+  width: 60%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+/** in Index**/
+@media screen and (max-width: 600px) {
+  .cutout-text {
+    font-size: 10vw;
+    width: 90%;
+  }
+}
+
+/** in Angebot und Events**/
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+}

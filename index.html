@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- Spracheinstellung: Deutsch -->
+<html lang="de">
+  <head>
+    <!-- Univeraller Zeichenübersetzer-->
+    <meta charset="UTF-8" />
+    <!--Für responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Tab Name-->
+    <title>Home - Moon Coffee</title>
+    <!--Favicon-->
+    <link rel="icon" href="media/bilder/coffee_cup.png" type="image/png" />
+    <!--W3C Framework-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/custom.css" />
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /** CSS für Schriftarten**/
+      body,
+      h1 {
+        font-family: lexend, sans-serif;
+      }
+      /** Headerpadding**/
+      .headerpadding {
+        padding: 0.01em 16px;
+        padding-top: 0.01em;
+        padding-right: 16px;
+        padding-bottom: 0.01em;
+        padding-left: 16px;
+      }
+    </style>
+  </head>
+  <!--Logo-->
+  <body>
+    <header class="w3-container headerpadding">
+      <img src="media/bilder/logo.png" alt="Logo moon coffee" />
+    </header>
+    <!--Navigation-->
+    <nav class="w3-bar w3-border w3-brown w3-large">
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-border-right w3-hover-brown"
+        >Home</a
+      >
+      <a
+        href="html/angebot.html"
+        class="w3-bar-item w3-button w3-border-right w3-hover-brown"
+        >Angebot</a
+      >
+      <a
+        href="html/events.html"
+        class="w3-bar-item w3-button w3-border-right w3-hover-brown"
+        >Events</a
+      >
+    </nav>
+    <!--Headerbild-->
+    <main class="w3-container">
+      <div>
+        <img
+          src="media/bilder/headerbild.jpg"
+          alt="Bild des Kaffee Shops"
+          style="width: 100vw; height: 85vh; object-fit: cover"
+        />
+        <!--Cutout Text auf dem Headerbild-->
+        <div class="w3-animate-opacity cutout-text">
+          Willkommen <br />
+          im Moon Coffee
+        </div>
+      </div>
+      <br />
+      <!--Einleitungstext-->
+      <div class="w3-row">
+        <div class="w3-col m7 s12 w3-padding-large">
+          <h1>Moon Coffee – Dein Genussmoment</h1>
+          <p>
+            Tauche ein in die gemütliche Atmosphäre unseres Coffee Shops –
+            direkt im Herzen der Stadt. Bei uns erwartet dich feinster, frisch
+            gebrühter Kaffee, liebevoll zubereitete Spezialitäten und ein Ort
+            zum Wohlfühlen. Ob für den perfekten Start in den Tag oder eine
+            entspannte Pause zwischendurch – im Moon Coffee bist du immer
+            willkommen.
+          </p>
+        </div>
+        <!--Bild zum Einleitungstext-->
+        <div class="w3-col m5 s12">
+          <img
+            src="media/bilder/willkommen.png"
+            alt="Person gibt dir einen Kaffee"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+      <br />
+      <!--Bild zu den Öffnungszeiten-->
+      <div class="w3-row">
+        <div class="w3-col s7">
+          <img
+            src="media/bilder/oeffnungszeiten.png"
+            alt="Kaffee auf einem Tisch"
+            style="width: 100%"
+          />
+        </div>
+        <!--Tabelle mit Öffnungszeiten inkl. Hover-Effekte-->
+        <div class="w3-col s5 w3-padding-large">
+          <ul class="w3-ul w3-card w3-center">
+            <li class="w3-brown">Öffnungszeiten</li>
+            <li class="w3-hover-brown">Mo–Fr: 07:00–18:00</li>
+            <li class="w3-hover-brown">Sa–So: 08:00–16:00</li>
+          </ul>
+        </div>
+      </div>
+      <br />
+      <!--Video + kleiner Text dazu-->
+      <p class="w3-center">Hier ein Video von unserem Kaffee-Shop.</p>
+      <br />
+      <video width="100%" height="100%" muted controls preload="none">
+        <source src="media/video/video_shop.mp4" type="video/mp4" />
+        <source src="movie.ogg" type="video/ogg" />
+        <!--Falls der Browser das Video nicht unterstützen sollte-->
+        Dein Browser unterstützt kein Video.
+      </video>
+      <!--Audio + kleiner Text dazu-->
+      <p class="w3-center">Hören sie den Vögeln beim musizieren zu.</p>
+      <div class="w3-center w3-padding-16">
+        <audio controls preload="none">
+          <source src="media/audio/birds.mp3" type="audio/mp3" />
+          <!--Falls der Browser die Audio nicht unterstützen sollte-->
+          Dein Browser unterstützt kein Audio.
+        </audio>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer
+      class="w3-container w3-brown w3-padding-16 w3-center"
+      style="font-size: small"
+    >
+    <!--Inhalt des Footers (inkl. Ersteller, Dateiname der Dokumentation und Abgabedatum)-->
+      <p>Moon Coffee – Dein Lieblingsplatz für guten Kaffee & entspannte Momente</p>
+      <p>Ersteller: Loretz, Nguyen und Langenstein</p>
+      <p>Alessia_Langenstein_Alyssa_Nguyen_Chiara_Loretz_mma24cL_M287</p>
+      <p>Abgabedatum: 7. Juni 2025</p>
+    </footer>
+  </body>
+</html>
